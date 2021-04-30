@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".DetailUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_black">
+
+        <ProgressBar
+            android:id="@+id/proressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyle"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_photo"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_user_photo"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textSize="25sp"
+            android:textColor="@color/grey_white"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginBottom="20dp"
+            android:text="@string/username"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="15sp"
+            android:textColor="@color/grey_white"/>
+
+        <ImageView
+            android:id="@+id/iv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_home_work_24"
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/username"
+            android:contentDescription="@string/company"/>
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_toEndOf="@id/iv_company"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="18sp"
+            android:text="@string/company"
+            android:textColor="@color/grey1"/>
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_location_on_24"
+            android:layout_below="@id/iv_company"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/location" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_company"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv_location"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="18sp"
+            android:text="@string/location"
+            android:textColor="@color/grey1"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/tv_location"
+            app:cardBackgroundColor="@color/grey"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total_following"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/grey_white"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/following"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/grey_white"
+                android:textSize="15sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/tv_location"
+            app:cardBackgroundColor="@color/grey"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/tv_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total_followers"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/grey_white"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/followers"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/grey_white"
+                android:textSize="15sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_repository"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/tv_location"
+            app:cardBackgroundColor="@color/grey"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/tv_repository"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total_repository"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/grey_white"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/repository"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/grey_white"
+                android:textSize="15sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="453dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="@color/grey_black1"
+                android:contentDescription="@string/favorite"
+                android:src="@drawable/ic_baseline_favorite_border_24" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_below="@id/cv_repository"
+            android:layout_marginTop="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/grey_black"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_below="@id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_white" />
+    </RelativeLayout>
+</ScrollView>

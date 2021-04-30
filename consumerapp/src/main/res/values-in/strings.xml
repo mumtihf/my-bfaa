@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyBFFA</string>
+    <string name="name">Nama Lengkap</string>
+    <string name="total_following">39</string>
+    <string name="following">Mengikuti</string>
+    <string name="total_followers">56995</string>
+    <string name="followers">Pengikut</string>
+    <string name="username">username</string>
+    <string name="total_repository">100</string>
+    <string name="repository">Repositori</string>
+    <string name="location">Lokasi</string>
+    <string name="company">Perusahaan</string>
+    <string name="search_user">Cari Pengguna</string>
+    <string name="search">Cari</string>
+    <string name="url">http://www.github.com</string>
+    <string name="favorite">Suka</string>
+    <string name="change">Ubah Pengaturan Bahasa</string>
+    <string name="alarm">Pengingat</string>
+    <string name="clock">09.00</string>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyBFFA</string>
+    <string name="name">Full Name</string>
+    <string name="total_following">39</string>
+    <string name="following">Following</string>
+    <string name="total_followers">56995</string>
+    <string name="followers">Followers</string>
+    <string name="username">username</string>
+    <string name="total_repository">100</string>
+    <string name="repository">Repository</string>
+    <string name="location">Location</string>
+    <string name="company">Company</string>
+    <string name="search_user">Search User</string>
+    <string name="search">Search</string>
+    <string name="url">http://www.github.com</string>
+    <string name="favorite" translatable="false">Favorite</string>
+    <string name="change" translatable="false">Change Language Settings</string>
+    <string name="alarm" translatable="false">Alarm</string>
+    <string name="clock" translatable="false">09.00</string>
+    <string name="splash_screen" translatable="false">Splash Screen</string>
+</resources>
